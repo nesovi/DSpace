@@ -1906,7 +1906,7 @@ public class SolrServiceImpl implements SearchService, IndexingService {
             NamedList mltResults = (NamedList) rsp.getResponse().get("moreLikeThis");
             if(mltResults != null && mltResults.get(item.getType() + "-" + item.getID()) != null)
             {
-                SolrDocumentList relatedDocs = (SolrDocumentList) mltResults.get(item.getHandle());
+                SolrDocumentList relatedDocs = (SolrDocumentList) mltResults.get(item.getType() + "-" + item.getID());
                 for (Object relatedDoc : relatedDocs)
                 {
                     SolrDocument relatedDocument = (SolrDocument) relatedDoc;
