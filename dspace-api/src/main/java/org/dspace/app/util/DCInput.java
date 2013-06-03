@@ -66,6 +66,7 @@ public class DCInput
     private boolean closedVocabulary = false;
 
     /** allowed document types */
+    /** Se agrego este comentario para probar el merge desde git */
     private List<String> typeBind = null;
 
     /** 
