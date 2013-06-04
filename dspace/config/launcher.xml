@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <commands>
-
+	<!-- PRUEBA DE REBASE -->
     <command>
         <name>checker</name>
         <description>Run the checksum checker</description>
